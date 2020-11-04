@@ -13,16 +13,14 @@ public class MainActivity extends AppCompatActivity{
     public void buttonClick(android.view.View v)
     {
         EditText speed_input = findViewById(R.id.speed);
-        String speed_str = speed_input.getText().toString();
-        int speed_num = Integer.parseInt(speed_str);
+        double speed_num = Integer.parseInt(speed_input.getText().toString());
 
         EditText time_input = findViewById(R.id.time);
-        String time_str = time_input.getText().toString();
-        int time_num = Integer.parseInt(time_str);
+        double time_num = Double.parseDouble(time_input.getText().toString());
         
-        int distance = speed_num * time_num;
+        double distance = speed_num * time_num;
         EditText distance_input = findViewById(R.id.distance);
-        String distance_str = Integer.toString(distance);
+        String distance_str = Double.toString(distance);
         distance_input.setText(distance_str);
     }
 }
