@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity{
     public void buttonClick(android.view.View v)
     {
         EditText speed_input = findViewById(R.id.speed);
-        double speed_num = Integer.parseInt(speed_input.getText().toString());
+        double speed_num = Double.parseDouble(speed_input.getText().toString());
 
         EditText time_input = findViewById(R.id.time);
         double time_num = Double.parseDouble(time_input.getText().toString());
